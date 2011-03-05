@@ -25,7 +25,7 @@ class Filosofo_Child_Page_List
 		$query_args = array(
 			'orderby' => 'menu_order,title',
 			'order' => 'ASC',
-			'parent' => get_queried_object_id(),
+			'post_parent' => get_queried_object_id(),
 			'post_type' => 'page',
 			'showposts' => -1,
 		);
